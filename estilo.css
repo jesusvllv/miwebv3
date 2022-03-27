@@ -1,0 +1,89 @@
+body {
+	height: 100vh;
+	background: url(img/bc.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #FFF;
+	margin: 0;
+	padding: 0;
+}
+.main {
+	background-color: aliceblue;
+}
+.nav1 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 10px 0 10px;
+}
+.nav1 h1 {
+	font-family: sans-serif;
+	margin-bottom: 0;
+}
+.nav1 a {
+	font-family: sans-serif;
+	color: brown;
+	text-decoration: none;
+	font-weight: 800;
+	font-size: 20px;
+	margin-bottom: 0;
+}
+/*AQUI ACABA LA PRIMERA PARTE*/
+.nav2 ol {
+	display: flex;
+	justify-content: center;
+	margin-top: 0;
+}
+.nav2 ol li {
+	list-style: none;
+	margin-right: 10px;
+	text-align: center;
+}
+.nav2 ol li a {
+	text-decoration: none;
+	color: black;
+	font-family: sans-serif;
+}
+/*AQUI ACABA LA ULTIMA PARTE DEL NAV*/
+
+.main2 h2 {
+	color: whitesmoke;
+	text-align: center;
+	background-color: rgba(80, 90, 20, 0.5);
+	padding: 20px;
+	margin: 100px 400px 0 400px;
+	border-radius: 10px;
+	font-family: sans-serif;
+	font-weight: 800;
+}
+.main2 div {
+	text-align: center;
+	margin-top: 100px;
+}
+.main2 div a{
+	text-decoration: none;
+	color: whitesmoke;
+	border: 5px solid whitesmoke;
+	padding: 10px 15px 10px 15px;
+	font-family: sans-serif;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+/*AQUI INICIA EL MEDIA QUERY*/
+
+@media (max-width: 1080px) {
+	.main2 h2 {
+		margin: 100px 0 0 0;
+		border-radius: 0;
+	}
+	.main2 a {
+		border-radius: 10px;
+	}
+}
+@media (min-width: 1080px) {
+	.nav2 {
+		display: flex;
+		justify-content: center;
+	}
+}
